@@ -50,6 +50,7 @@ header {
     border-radius: 8px;
     align-items: center;
     gap: 5px;
+    min-width: 128px;
 }
 
 .subHeader li img {

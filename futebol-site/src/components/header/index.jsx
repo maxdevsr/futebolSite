@@ -9,7 +9,7 @@ import PatchSupArg from "../../assets/ligaArgentina.png"
 import PatchBrasileirao from "../../assets/brasileiro.svg"
 import PatchLigaMX from "../../assets/mexican.png"
 import PatchMLS from "../../assets/MLS.svg"
-import PatchLaliga from "../../assets/laliga.svg"
+import PatchLaliga from "../../assets/laLiga.png"
 import "./style.css"
 
 function Header() {

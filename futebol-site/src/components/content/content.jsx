@@ -1,4 +1,7 @@
 import "./style.css"
+import cruzeiro from "../../assets/cruzeiro.svg"
+import atletico from "../../assets/atleticomg.svg"
+import noticias from "../../assets/noticiasIcon.png"
 
 function Content() {
     const games = [
@@ -32,6 +35,32 @@ function Content() {
                 </div>
             </div>
             <div className="cardInfo">
+                <div className="headerBlog">
+                    <img src={noticias} alt="noticias" />
+                    Notícias
+                </div>
+                <section>
+                    <div className="contentNoticias">
+                        <h1>Cristiano Ronaldo</h1>
+                        <article>
+                            Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Minus nisi, voluptatibus
+                            quos atque porro blanditiis totam.
+                        </article>
+                    </div>
+                    <img src={cruzeiro} alt="Cruzeiro" />
+                </section>
+                <section>
+                    <div className="contentNoticias">
+                        <h1>Lionel Messi</h1>
+                        <article>
+                            Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Minus nisi, voluptatibus
+                            quos atque porro blanditiis totam.
+                        </article>
+                    </div>
+                    <img src={atletico} alt="Atletico" />
+                </section>
             </div>
         </div>
     )
