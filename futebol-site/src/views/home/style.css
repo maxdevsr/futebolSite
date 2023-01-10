@@ -1,6 +1,6 @@
 header {
     width: 100vw;
-    height: 8rem;
+    height: 10rem;
 }
 
 .Header1{
@@ -9,7 +9,7 @@ header {
     justify-content: space-around;
     align-items: center;
     background: #126e51;
-    height: 55%;
+    height: 50%;
 }
 
 .Header1 span {
@@ -37,14 +37,25 @@ header {
     justify-content: space-around;
     align-items: center;
     background: #383838;
-    height: 45%;
+    height: 50%;
+    padding-bottom: 0.5rem;
 }
 
 .subHeader li {
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
     padding: 0.5rem;
     color: #e4e4e4;
     border-radius: 8px;
+    align-items: center;
+    gap: 5px;
+}
+
+.subHeader li img {
+    width: 40px;
+    height: 40px;
+    /* background: white; */
 }
 
 .subHeader li:hover {
