@@ -10,6 +10,8 @@ import PatchBrasileirao from "../../assets/brasileiro.svg"
 import PatchLigaMX from "../../assets/mexican.png"
 import PatchMLS from "../../assets/MLS.svg"
 import PatchLaliga from "../../assets/laliga.svg"
+import "./style.css"
+
 function Header() {
     const leagues = [
         { nome: 'Premier League', pais: 'Inglaterra', imagem: PatchPremier },
