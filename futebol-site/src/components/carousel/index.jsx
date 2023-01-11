@@ -1,48 +1,32 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from 'react-bootstrap/Carousel';
+import { MDBCarousel, MDBCarouselItem } from 'mdb-react-ui-kit';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
 function CarouselComponent() {
 
     return (
-        <Carousel fade>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="../../assets/atleticomg.svg"
-                    alt="First slide"
-                />
-                <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="../../assets/cruzeiro.svg"
-                    alt="Second slide"
-                />
-
-                <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=Third slide&bg=20232a"
-                    alt="Third slide"
-                />
-
-                <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
+        <MDBCarousel showControls style={{ width: "100%", maxHeight: "14rem", minHeight: "14rem" }}>
+            <MDBCarouselItem
+                style={{ height: "100%" }}
+                className='w-100 d-block'
+                itemId={1}
+                src='https://www.otempo.com.br/image/contentid/policy:1.1779645:1560971014/image-image-jpg.jpg'
+                alt='...'
+            />
+            <MDBCarouselItem
+                style={{ height: "100%" }}
+                className='w-100 d-block'
+                itemId={2}
+                src='https://forbes.es/wp-content/uploads/2020/10/Madrid-Barca.jpg'
+                alt='...'
+            />
+            <MDBCarouselItem
+                style={{ height: "100%" }}
+                className='w-100 d-block'
+                itemId={3}
+                src='https://365dicas.com/wp-content/uploads/2022/08/fresh-1.webp'
+                alt='...'
+            />
+        </MDBCarousel>
     )
 }
 export default CarouselComponent
