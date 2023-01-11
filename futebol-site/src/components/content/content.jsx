@@ -2,14 +2,21 @@ import "./style.css"
 import cruzeiro from "../../assets/cruzeiro.svg"
 import atletico from "../../assets/atleticomg.svg"
 import noticias from "../../assets/noticiasIcon.png"
+import bayern from "../../assets/bayern.png"
+import psg from "../../assets/psg.png"
+import liverpool from "../../assets/liverpool.png"
+import realmadrid from "../../assets/realmadrid.png"
+import leipzig from "../../assets/leipzig.png"
+import manchestercity from "../../assets/manchestercity.png"
+import borussiadortmund from "../../assets/borussiadortmund.png"
+import chelsea from "../../assets/chelsea.png"
 
 function Content() {
     const games = [
-        { timeCasa: 'PSG', votoCasa: '_', votoFora: '_', timeFora: 'Bayern de Munique' },
-        { timeCasa: 'PSG', votoCasa: '_', votoFora: '_', timeFora: 'Bayern de Munique' },
-        { timeCasa: 'PSG', votoCasa: '_', votoFora: '_', timeFora: 'Bayern de Munique' },
-        { timeCasa: 'PSG', votoCasa: '_', votoFora: '_', timeFora: 'Bayern de Munique' },
-        { timeCasa: 'PSG', votoCasa: '_', votoFora: '_', timeFora: 'Bayern de Munique' },
+        { imgTimeCasa: psg, timeCasa: 'PSG', votoCasa: '1', votoFora: '1', imgTimeFora: bayern, timeFora: 'Bayern de Munique', hora: 'Hoje 17:00' },
+        { imgTimeCasa: liverpool, timeCasa: 'Liverpool', votoCasa: '2', votoFora: '2', imgTimeFora: realmadrid, timeFora: 'Real Madrid', hora: 'Hoje 13:00' },
+        { imgTimeCasa: leipzig, timeCasa: 'RB Leipzig', votoCasa: '1', votoFora: '1', imgTimeFora: manchestercity, timeFora: 'Manchester City', hora: 'Hoje 17:00' },
+        { imgTimeCasa: borussiadortmund, timeCasa: 'Borussia Dortmund ', votoCasa: '1', votoFora: '1', imgTimeFora: chelsea, timeFora: 'Chelsea', hora: 'Hoje 13:00' },
     ]
     return (
         <div className="Content">
@@ -23,11 +30,26 @@ function Content() {
                         {games.map((game, key) => {
                             return (
                                 <li key={key} className="liPalpite">
-                                    <span>{game.timeCasa}</span>
-                                    <input className="inputPalpite"></input>
-                                    <span>X</span>
-                                    <span>{game.votoFora}</span>
-                                    <span>{game.timeFora}</span>
+                                    <span className="spanPalpiteTime">
+                                        <img className="imgPalpite" src={game.imgTimeCasa} alt="" />
+                                        <p>
+                                            {game.timeCasa}
+                                        </p>
+                                    </span>
+                                    <input className="inputPalpite" value={game.votoFora}></input>
+                                    <div className="spanPalpiteX">
+                                        <p>X</p>
+                                        <p className="pPalpite">
+                                            {game.hora}
+                                        </p>
+                                    </div>
+                                    <input className="inputPalpite" value={game.votoFora}></input>
+                                    <span className="spanPalpiteTime">
+                                        <img className="imgPalpite" src={game.imgTimeFora} alt="" />
+                                        <p>
+                                            {game.timeFora}
+                                        </p>
+                                    </span>
                                 </li>
                             )
                         })}

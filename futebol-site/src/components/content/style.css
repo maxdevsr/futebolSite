@@ -1,6 +1,6 @@
 .Content {
     background-color: #e4e4e4;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
@@ -13,7 +13,6 @@
 .Content .cardInfo {
     background-color: white;
     width: 23%;
-    height: 100%;
     /* box-shadow: 0 1px 2px rgb(0 0 0 / 5%); */
 } 
 .headerPalpite {
@@ -22,7 +21,7 @@
     font-weight: bold;
     font-size: 1.5rem;
     padding-left: 2%;
-    height: 10%;
+    /* height: 10%; */
     border-bottom: solid 1px rgb(231, 226, 226);
 }
 .headerBlog {
@@ -31,14 +30,13 @@
     font-weight: bold;
     font-size: 1.5rem;
     padding-left: 2%;
-    height: 10%;
     border-bottom: solid 1px rgb(231, 226, 226);
 }
 
 .headerBlog img {
-    width: 30px;
-    height: 30px;
+    height: 3rem;
     margin-right: 0.5rem;
+    padding: 10px;
 }
 
 .cardInfo div h1 {
@@ -75,7 +73,7 @@
     min-width: 130px;
 }
 .svgPalpite {
-    height: 30%;
+    height: 3rem;
     padding: 10px;
 }
 .bodyPalpite {
@@ -96,10 +94,34 @@
     display: flex;
     justify-content: space-around;
     padding: 3rem;
+    align-items: center;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right,rgba(0, 0, 0, 0), rgb(231, 226, 226), rgba(0, 0, 0, 0)) 1;
+
 }
 .inputPalpite {
     border: 1px solid  rgb(231, 226, 226);
     width: 3rem;
     height: 3rem;
     background-color: #e4e4e4; 
+    text-align: center;
+    font-size: 1.5rem;
+}
+.spanPalpiteX {
+    gap: 10px;
+    text-align: center;
+    height: 100%;
+}
+.pPalpite {
+    /* padding-top: 15px; */
+    font-size: 0.9rem;
+}
+.spanPalpiteTime{
+    text-align: center;
+    width: 200px;
+}
+.imgPalpite {
+    padding-bottom: 5px;
+    height: 5rem;
 }
