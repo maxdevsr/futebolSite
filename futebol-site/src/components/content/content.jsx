@@ -11,6 +11,8 @@ import manchestercity from "../../assets/manchestercity.png"
 import borussiadortmund from "../../assets/borussiadortmund.png"
 import chelsea from "../../assets/chelsea.png"
 import Carousel from "../carousel"
+import milan from "../../assets/milan.png"
+import tottenham from "../../assets/tottenham.png"
 
 function Content() {
     const games = [
@@ -18,6 +20,7 @@ function Content() {
         { imgTimeCasa: liverpool, timeCasa: 'Liverpool', votoCasa: '2', votoFora: '2', imgTimeFora: realmadrid, timeFora: 'Real Madrid', hora: 'Hoje 13:00' },
         { imgTimeCasa: leipzig, timeCasa: 'RB Leipzig', votoCasa: '1', votoFora: '1', imgTimeFora: manchestercity, timeFora: 'Manchester City', hora: 'Hoje 17:00' },
         { imgTimeCasa: borussiadortmund, timeCasa: 'Borussia Dortmund ', votoCasa: '1', votoFora: '1', imgTimeFora: chelsea, timeFora: 'Chelsea', hora: 'Hoje 13:00' },
+        { imgTimeCasa: milan, timeCasa: 'Milan ', votoCasa: '3', votoFora: '3', imgTimeFora: tottenham, timeFora: 'Tottenham Hotspur', hora: 'Hoje 17:00' },
     ]
     return (
         <div className="Content">
