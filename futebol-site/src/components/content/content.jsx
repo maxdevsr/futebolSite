@@ -10,6 +10,7 @@ import leipzig from "../../assets/leipzig.png"
 import manchestercity from "../../assets/manchestercity.png"
 import borussiadortmund from "../../assets/borussiadortmund.png"
 import chelsea from "../../assets/chelsea.png"
+import Carousel from "../carousel"
 
 function Content() {
     const games = [
@@ -82,6 +83,9 @@ function Content() {
                         </article>
                     </div>
                     <img src={atletico} alt="Atletico" />
+                </section>
+                <section>
+                    <Carousel />
                 </section>
             </div>
         </div>
