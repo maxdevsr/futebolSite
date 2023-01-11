@@ -52,12 +52,12 @@
 }
 .cardInfo div article{
     font-size: 1.5rem;
-    line-height: 20px;
     letter-spacing: -1px;
     font-family: opensans, opensans-bastian, Arial, sans-serif;
     font-weight: 700;
     color: #06aa48;
     padding: 1rem 2rem 1rem 0rem;
+    line-height: 1.1 !important;
 }
 
 .cardInfo section{
