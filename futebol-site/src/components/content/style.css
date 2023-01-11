@@ -63,7 +63,9 @@
 .cardInfo section{
     display: flex;
     padding: 1rem;
-    border-bottom: 1px solid rgb(238, 238, 238);
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right,rgba(0, 0, 0, 0), rgb(231, 226, 226), rgba(0, 0, 0, 0)) 1;;
     cursor: pointer;
 }
 .cardInfo section img {
